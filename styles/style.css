@@ -148,7 +148,7 @@ nav li a{
     object-fit: contain;
 }
 footer {
-    padding: 90px 0 30px;
+    padding: 90px 0 0;
 }
 footer .container{
     max-width: 1000px;
@@ -156,6 +156,7 @@ footer .container{
 }
 footer .grid{
     gap: 150px;
+    justify-items: center;
 }
 footer h4{
     font-size: 16px;
@@ -180,6 +181,8 @@ footer li a{
 
 
 /* Responsive design */
+
+/* Mobile device */
 
 @media (max-width:640px) {
     .container{
@@ -240,4 +243,97 @@ footer li a{
     footer p{
         padding: 50px 0 20px ;
     }
-} 	
+} 
+
+/* Tablate device */
+@media (min-width:768px) and (max-width:1023px){
+    .container{
+        max-width: 768px;
+        padding: 0 5px;
+    }
+    .menu, .logos{
+        display: none;
+    }
+    .hero {
+        background-size: cover;
+        min-height: 400px;
+    }
+    .row {
+        padding-left: 3%;
+    }
+    .col-1 {
+        flex-basis: 65%;
+        max-width: 65%;
+        background: #ffffff40;
+        padding: 14px;
+    }
+    .navigation{
+        padding: 20px 10px;
+    }
+    .logo img{
+        width: 85%;
+    }
+    .hamburger{
+        display: block;
+    }
+    .heading {
+        font-size: 25px;
+    }
+    .btn a {
+        padding: 10px 17px;
+        font-size: 12px;
+    }
+    .feature{
+        padding: 50px 0;
+    }
+
+    .grid{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 30px;
+       
+    }
+    .benefits{
+        padding:30px 10px 0 ;
+    }
+    footer {
+        padding: 20px 0;
+    }
+    footer .container {
+        max-width: 680px;
+    }
+    footer .grid{
+        
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 40px;
+    }
+    footer p{
+        padding: 50px 0 0 ;
+    }
+}
+
+@media (min-width:1024px) and (max-width: 1200px){
+    .container{
+        max-width: 1024px;
+        padding: 0 5px;
+    }
+    .menu, .logos{
+        display: none;
+    }
+    .grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 60px;
+       
+    }
+    .heading {
+        font-size: 30px;
+    }
+    .benefits {
+        padding: 50px 10px 0;
+    }
+    footer {
+        padding: 50px 0;
+    }
+    footer .container {
+        max-width: 900px;
+    }
+}	
