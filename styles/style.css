@@ -81,11 +81,11 @@ nav li:first-child{
     margin-left: 0;
 }
 nav li a{
-    font-size: 1em;
+    font-size: 18px;
     font-weight: 600;
     line-height: 1.5;
     text-decoration: none;
-    color: #3a3a3a;
+    color: #000;
 }
 
 
