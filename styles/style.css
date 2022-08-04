@@ -131,8 +131,8 @@ nav li a{
 .headline .heading{
     padding-bottom: 30px;
 }
-.benefits{
-    padding-top:60px ;
+.benefits {
+    padding: 60px 10px 0;
 }
 .grid{
     display: grid;
