@@ -319,6 +319,9 @@ footer li a{
     .heading {
         font-size: 25px;
     }
+    .hero .heading,.heading{
+        padding-bottom: 20px;
+    }
     .btn a {
         padding: 10px 17px;
         font-size: 12px;
@@ -369,6 +372,9 @@ footer li a{
     }
     .heading {
         font-size: 30px;
+    }
+    .hero .heading,.heading{
+        padding-bottom: 20px;
     }
     .benefits {
         padding: 50px 10px 0;
