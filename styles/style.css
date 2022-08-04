@@ -87,6 +87,9 @@ nav li a{
     text-decoration: none;
     color: #000;
 }
+.hamburger{
+    display: none;
+}
 
 
 /* Hero section */
@@ -174,3 +177,67 @@ footer li a{
     text-decoration: none;
     color: #3a3a3a;
 }
+
+
+/* Responsive design */
+
+@media (max-width:640px) {
+    .container{
+        max-width: 640px;
+        padding: 0 5px;
+    }
+    .menu, .logos{
+        display: none;
+    }
+    .hero {
+        background-size: cover;
+        min-height: 250px;
+    }
+    .row {
+        padding-left: 0;
+    }
+    .col-1 {
+        flex-basis: 65%;
+        max-width: 65%;
+        background: #ffffff40;
+        padding: 14px;
+    }
+    .navigation{
+        padding: 20px 10px;
+    }
+    .logo img{
+        width: 85%;
+    }
+    .hamburger{
+        display: block;
+    }
+    .heading {
+        font-size: 21px;
+    }
+    .btn a {
+        padding: 10px 17px;
+        font-size: 12px;
+    }
+    .feature{
+        padding: 50px 0;
+    }
+
+    .grid{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 30px;
+       
+    }
+    .benefits{
+        padding:30px 10px 0 ;
+    }
+    footer {
+        padding: 20px 0;
+        text-align: center;
+    }
+    footer .grid{
+        gap: 40px;
+    }
+    footer p{
+        padding: 50px 0 20px ;
+    }
+} 	
