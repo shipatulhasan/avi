@@ -21,7 +21,7 @@ main{
     font-size: 33px;
     font-weight: 700;
     color: #000;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .description {
@@ -35,7 +35,7 @@ main{
     margin: 20px 0px;
 }
 .btn a {
-    padding: 14px 30px;
+    padding: 14px 25px;
     background:#000;
     color: #fff;
     text-decoration: none;
@@ -146,6 +146,9 @@ nav li a{
     min-height: 629px;
     
 }
+.hero .heading{
+    padding-bottom: 50px;
+}
 
 
 /* benefits section */
@@ -159,9 +162,6 @@ nav li a{
     display: flex;
     flex-flow: column;
     align-items: center;
-}
-.headline .heading{
-    padding-bottom: 30px;
 }
 .benefits {
     padding: 70px 10px 0;
@@ -233,6 +233,9 @@ footer li a{
     .hero {
         background-size: cover;
         min-height: 250px;
+    }
+    .hero .heading,.heading{
+        padding-bottom: 20px;
     }
     .row {
         padding-left: 0;
