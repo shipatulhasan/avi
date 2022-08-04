@@ -338,7 +338,7 @@ footer li a{
     footer {
         padding: 20px 0;
     }
-    footer .container {
+    footer .wrapper {
         max-width: 680px;
     }
     footer .grid{
@@ -376,7 +376,10 @@ footer li a{
     footer {
         padding: 50px 0;
     }
-    footer .container {
+    footer .wrapper {
         max-width: 900px;
+    }
+    footer .grid{
+        gap: 40px;
     }
 }	
