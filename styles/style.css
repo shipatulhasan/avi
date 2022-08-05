@@ -138,6 +138,7 @@ nav li a{
 .slide-wrapper {
     margin: 20px 0 0;
     overflow: hidden;
+    position: relative;
 }
   
 .slides-container {
@@ -180,19 +181,19 @@ nav li a{
     transform: translateY(-50%);
 }
   
-  .next-btn,
-  .prev-btn {
-    padding: 16px;
-    position: absolute;
-    color: whitesmoke;
-    top: 80%;
-    transform: translateY(-50%);
-    font-size: 40px;
-    font-weight: 400;
-    z-index: 100;
-    cursor: pointer;
-    transition: 400ms;
-  }
+.next-btn,
+.prev-btn {
+  padding: 16px;
+  position: absolute;
+  color: whitesmoke;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  font-weight: 400;
+  z-index: 100;
+  cursor: pointer;
+  transition: 400ms;
+}
   
   .prev-btn {
     left: 0;
