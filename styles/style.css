@@ -374,7 +374,7 @@ footer li a{
 }  
 
 /* Tablate device */
-@media (min-width:768px) and (max-width:1023px){
+@media (min-width:640.5px) and (max-width:1023px){
     .container{
         max-width: 768px;
         padding: 0 5px;
@@ -432,6 +432,10 @@ footer li a{
     }
     .hero .heading,.heading{
         padding-bottom: 20px;
+    }
+    .slides-container {
+        min-height: 500px;
+     
     }
     .btn a {
         padding: 10px 17px;
@@ -492,6 +496,9 @@ footer li a{
         position: absolute;
         right: 20px;
         top: 80px;
+    }
+    .slides-container {
+        min-height: 550px;
     }
     .grid{
         grid-template-columns: repeat(2, minmax(0, 1fr));
