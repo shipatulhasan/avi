@@ -281,10 +281,6 @@ footer li a{
 /* Mobile device */
 
 @media (max-width:640px) {
-    .slide-image img {
-        width: 50%;
-        height: 50%;
-    }
     .container{
         max-width: 640px;
         padding: 0 5px;
@@ -330,10 +326,25 @@ footer li a{
     .heading {
         font-size: 21px;
     }
+    .hero .heading{
+        padding-bottom: 10px;
+    }
     .btn a {
         padding: 10px 17px;
         font-size: 12px;
     }
+    .slides-container {
+        min-height: 250px;
+    }
+    .next-btn,
+.prev-btn {
+  padding: 10px;
+  font-size: 20px;
+}
+.slide-image img{
+    width: 100%;
+    max-width: 100%;
+}
     .feature{
         padding: 50px 0;
     }
@@ -391,7 +402,7 @@ footer li a{
         display: block;
         position: absolute;
         right: 20px;
-        top: 70px;
+        top: 20px;
     }
 
     .row {
