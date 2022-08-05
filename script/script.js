@@ -80,7 +80,6 @@ prevBtn.addEventListener("click", () => {
     goToSlide(numberOfImages - 1);
     return;
   }
-
   currentSlide--;
   goToSlide(currentSlide);
 });
@@ -90,9 +89,7 @@ prevBtn.addEventListener("click", () => {
 function goToSlide(slideNumber) {
   slidesContainer.style.transform =
     "translateX(-" + slideWidth * slideNumber + "px)";
-
   currentSlide = slideNumber;
-
   setActiveClass();
 }
 
