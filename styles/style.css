@@ -23,6 +23,8 @@ main{
     font-weight: 700;
     color: #000;
     padding-bottom: 30px;
+    
+   
 }
 
 .description {
@@ -50,7 +52,7 @@ main{
     padding: 20px 0;
     text-align: center;
     background-color: #000;
-    position: relative;
+   
 }
 .announcement h2{
     color: #fff;
@@ -120,19 +122,34 @@ nav li a{
 .logos img{
     margin-top: 6px;
 }
+.navigation #icon{
+      font-size: 2.5em;
+      display: none;
+}
 .hamburger{
     display: none;
 }
+.top-nav{
+    display: none;
+}
 
+/* slider */
 
-/* Hero section */
+.slide-wrapper {
+    margin: 20px 0 0;
+    overflow: hidden;
+}
+  
+.slides-container {
+    min-height: 630px;
+    transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
+    position: relative;
+  }
 .row{
     display: flex;
     flex-flow: wrap row;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 5% ;
-    
     
 }
 .col-1{
@@ -140,18 +157,57 @@ nav li a{
     max-width: 50%;
     z-index: 1;
 }
-.hero{
-    background: no-repeat url(../img/banner.png);
-    background-size: cover;
-    background-position: center;
-    min-height: 629px;
-    
-}
 .hero .heading{
     padding-bottom: 50px;
 }
-
-
+  
+.slide-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide-content {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+  
+  .next-btn,
+  .prev-btn {
+    padding: 16px;
+    position: absolute;
+    color: whitesmoke;
+    top: 80%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    font-weight: 400;
+    z-index: 100;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+  
+  /* Navigation Dots */
+  
+  .navigation-dots {
+    display: none;
+  }
+  
 /* benefits section */
 .feature{
     padding: 61px 0;
@@ -224,19 +280,16 @@ footer li a{
 /* Mobile device */
 
 @media (max-width:640px) {
+    .slide-image img {
+        width: 50%;
+        height: 50%;
+    }
     .container{
         max-width: 640px;
         padding: 0 5px;
     }
     .menu, .logos{
         display: none;
-    }
-    .hero {
-        background-size: cover;
-        min-height: 250px;
-    }
-    .hero .heading,.heading{
-        padding-bottom: 20px;
     }
     .row {
         padding-left: 0;
@@ -249,12 +302,29 @@ footer li a{
     }
     .navigation{
         padding: 20px 10px;
+        position: relative;
     }
     .logo img{
         width: 85%;
     }
+      .top-nav{
+          display: block;
+      }
+      .menu a{
+        color: #000;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+      }
+      
     .hamburger{
         display: block;
+        position: absolute;
+        right: 12px;
+        top: 12px;
     }
     .heading {
         font-size: 21px;
@@ -284,8 +354,8 @@ footer li a{
     }
     footer p{
         padding: 30px 0 ;
-    }
-} 
+    } 
+}  
 
 /* Tablate device */
 @media (min-width:768px) and (max-width:1023px){
@@ -297,12 +367,37 @@ footer li a{
         max-width: 600px;
     }
     .menu, .logos{
-        display: none;
+        display: block;
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        background: rgba(0,0,0,0.5);
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction:column ;
+        align-items: center;
+        transition: right 0.5s linear;
     }
-    .hero {
-        background-size: cover;
-        min-height: 400px;
+     .top-nav{
+        display: block;
     }
+    .menu a{
+        color: #000;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+      }
+      
+      .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+    }
+
     .row {
         padding-left: 3%;
     }
@@ -357,7 +452,7 @@ footer li a{
     footer p{
         padding: 50px 0 0 ;
     }
-}
+} 
 
 @media (min-width:1024px) and (max-width: 1200px){
     .container{
@@ -367,8 +462,25 @@ footer li a{
     .menu, .logos{
         display: none;
     }
-    .hamburger{
+    
+    .top-nav{
         display: block;
+    }
+    .menu a{
+        color: #000;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+      }
+      
+      .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 80px;
     }
     .grid{
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -381,6 +493,9 @@ footer li a{
     .hero .heading,.heading{
         padding-bottom: 20px;
     }
+    .navigation #icon{
+        display: block;
+    };
     .benefits {
         padding: 50px 10px 0;
     }
