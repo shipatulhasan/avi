@@ -178,7 +178,7 @@ nav li a{
     width: 100%;
     z-index: 1;
     top: 50%;
-    left: 10%;
+    left: 8%;
     transform: translateY(-50%);
 }
   
@@ -345,6 +345,9 @@ footer li a{
 .slide-image img{
     width: 100%;
     max-width: 100%;
+    }
+    .slide-content {
+        left: 5%;
     }
     .feature{
         padding: 50px 0;
