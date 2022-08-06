@@ -1,30 +1,35 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap');
+
 /* Utilities */
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     box-sizing: border-box;
     max-width: 100%;
     font-family: 'Montserrat', sans-serif;
     background-color: #F5F5F5;
 }
-.container{
+
+.container {
     max-width: 1340px;
     margin: 0 auto;
 }
-main{
+
+main {
     margin: 0 10px;
 }
-.heading{
+
+.heading {
     font-size: 33px;
     font-weight: 700;
     color: #000;
     padding-bottom: 30px;
-    
-   
+
+
 }
 
 .description {
@@ -34,12 +39,14 @@ main{
     line-height: 1.5em;
     font-family: 'Roboto', sans-serif;
 }
-.btn{
+
+.btn {
     margin: 20px 0px;
 }
+
 .btn a {
     padding: 14px 25px;
-    background:#000;
+    background: #000;
     color: #fff;
     text-decoration: none;
     font-size: 16px;
@@ -47,51 +54,59 @@ main{
     font-weight: bold;
     text-transform: uppercase;
 }
+
 /* Header part */
-.announcement{
+.announcement {
     padding: 20px 0;
     text-align: center;
     background-color: #000;
-   
+
 }
-.announcement h2{
+
+.announcement h2 {
     color: #fff;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.3em;
 }
 
-.navigation{
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 32px 5px;
 
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
     list-style: none;
 }
-nav ul li{
+
+nav ul li {
     margin-left: 25px;
 }
-.menu li{
-    margin:0 4px;
+
+.menu li {
+    margin: 0 4px;
     padding: 4px 16px;
     position: relative;
 }
-nav li:first-child{
+
+nav li:first-child {
     margin-left: 0;
-    
+
 }
-nav li a{
+
+nav li a {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.5;
     text-decoration: none;
     color: #000;
 }
+
 .menu li .active::before {
     content: '';
     background: black;
@@ -102,6 +117,7 @@ nav li a{
     right: 0;
     position: absolute;
 }
+
 .menu li .item::before {
     content: '';
     background: black;
@@ -113,58 +129,68 @@ nav li a{
     position: absolute;
     transition: width .5s linear;
 }
+
 .menu li:hover .item::before {
     width: 100%;
 }
-.menu li:hover{
+
+.menu li:hover {
     cursor: pointer;
 }
-.logos img{
+
+.logos img {
     margin-top: 6px;
 }
-.hamburger{
+
+.hamburger {
     display: none;
 }
+
 /* slider */
 
 .slide-wrapper {
     overflow: hidden;
     position: relative;
 }
-  
+
 .slides-container {
     min-height: 630px;
     transition: 900ms cubic-bezier(0.48, 0.15, 0.18, 1);
     position: relative;
-  }
-.row{
+}
+
+.row {
     display: flex;
     flex-flow: wrap row;
     justify-content: flex-start;
     align-items: center;
-    
+
 }
-.col-1{
+
+.col-1 {
     flex-basis: 50%;
     max-width: 50%;
     z-index: 1;
 }
-.hero .heading{
+
+.hero .heading {
     padding-bottom: 50px;
 }
-  
-.slide-image{
+
+.slide-image {
     width: 100%;
     height: 100%;
     max-width: 100%;
     position: absolute;
 }
+
 .slide-image img {
     width: 100%;
     max-width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .slide-content {
     position: absolute;
     width: 100%;
@@ -173,94 +199,108 @@ nav li a{
     left: 8%;
     transform: translateY(-50%);
 }
-  
+
 .next-btn,
 .prev-btn {
-  padding: 16px;
-  position: absolute;
-  color: whitesmoke;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 40px;
-  font-weight: 400;
-  z-index: 100;
-  cursor: pointer;
-  transition: 400ms;
+    padding: 16px;
+    position: absolute;
+    color: whitesmoke;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    font-weight: 400;
+    z-index: 100;
+    cursor: pointer;
+    transition: 400ms;
 }
-  
-  .prev-btn {
+
+.prev-btn {
     left: 0;
-  }
-  
-  .next-btn {
+}
+
+.next-btn {
     right: 0;
-  }
-  
-  /* Navigation Dots */
-  
-  .navigation-dots {
+}
+
+/* Navigation Dots */
+
+.navigation-dots {
     display: none;
-  }
-  
+}
+
 /* benefits section */
-.feature{
+.feature {
     padding: 61px 0;
 }
-.feature .container{
+
+.feature .container {
     max-width: 1200px;
 }
-.headline{
+
+.headline {
     display: flex;
     flex-flow: column;
     align-items: center;
 }
+
 .benefits {
     padding: 70px 10px 0;
 }
-.grid{
+
+.grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 70px;
-   
+
 }
-.icon-box{
+
+.icon-box {
     display: flex;
     gap: 30px;
 }
-.icon-box img{
+
+.icon-box img {
     object-fit: contain;
 }
-hr{
+
+hr {
     border: 1px solid #333;
     padding: 0 10px;
 }
+
 footer {
     padding: 40px 0 0;
 }
-footer .wrapper{
+
+footer .wrapper {
     max-width: 1000px;
     margin: 0 auto;
     padding: 60px 0 0;
 }
-footer .grid{
+
+footer .grid {
     gap: 150px;
     justify-items: center;
-    
+
 }
-footer h4{
+
+footer h4 {
     font-size: 16px;
     padding: 0 0 13px;
 }
-footer p{
+
+footer p {
     text-align: center;
     font-size: 14px;
-    padding: 90px 0 ;
+    padding: 90px 0;
 }
-footer ul{
-    
+
+footer ul {
+
     list-style: none;
 }
-footer li a{
+
+footer li a {
     font-size: 14px;
     font-weight: 400;
     line-height: 2em;
@@ -274,214 +314,150 @@ footer li a{
 /* Mobile device */
 
 @media (max-width:640px) {
-    .container{
+    .container {
         max-width: 640px;
         padding: 0 5px;
     }
-    .logos{
+
+    .logos {
         display: none;
     }
+
     .row {
         padding-left: 0;
     }
+
     .col-1 {
         flex-basis: 65%;
         max-width: 65%;
         background: #ffffff40;
         padding: 14px;
     }
-    .navigation{
+
+    .navigation {
         padding: 20px 10px;
         position: relative;
     }
-    .logo img{
-        width: 85%; 
+
+    .logo img {
+        width: 85%;
     }
-      .hamburger{
+
+    .hamburger {
         display: block;
-        
+
     }
-      .menu{
+
+    .menu {
         position: absolute;
         background-color: #F5F5F5;
-        top:100%;
+        top: 100%;
         right: 0;
         width: 100%;
         z-index: 999;
         transition: all .5s linear;
-      }
-      .menu ul{
-          display: block;
-      }
-      .menu li{
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu li {
         padding: 14px 16px;
-      }
-      
+    }
+
 
     .heading {
         font-size: 21px;
     }
-    .hero .heading{
+
+    .hero .heading {
         padding-bottom: 10px;
     }
+
     .btn a {
         padding: 10px 17px;
         font-size: 12px;
     }
+
     .slides-container {
         min-height: 250px;
     }
-        .next-btn,
+
+    .next-btn,
     .prev-btn {
-    padding: 10px;
-    font-size: 20px;
+        padding: 10px;
+        font-size: 20px;
     }
-    .slide-image img{
+
+    .slide-image img {
         width: 100%;
         max-width: 100%;
-        }
+    }
+
     .slide-content {
         left: 5%;
     }
-    .feature{
+
+    .feature {
         padding: 50px 0;
     }
 
-    .grid{
+    .grid {
         grid-template-columns: repeat(1, minmax(0, 1fr));
         gap: 50px;
-       
+
     }
-    .benefits{
-        padding:30px 10px 0 ;
+
+    .benefits {
+        padding: 30px 10px 0;
     }
+
     footer {
         padding: 20px 0;
         text-align: center;
     }
-    footer .grid{
+
+    footer .grid {
         gap: 40px;
     }
-    footer p{
-        padding: 30px 0 ;
-    } 
-}  
+
+    footer p {
+        padding: 30px 0;
+    }
+}
 
 /* Tablate device */
-@media (min-width:640.5px) and (max-width:1023px){
-    .container{
+@media (min-width:640.5px) and (max-width:1023px) {
+    .container {
         max-width: 768px;
         padding: 0 5px;
     }
-    .feature .container{
+
+    .feature .container {
         max-width: 600px;
     }
-    .logos{
+
+    .logos {
         display: none;
     }
-    .navigation{
+
+    .navigation {
         padding: 20px 2px;
         position: relative;
     }
-    .hamburger{
-        display: block;
-        
-    }
-    .menu {
-        
-            position: absolute;
-            background-color: #F5F5F5;
-            top: 100%;
-            right: 0;
-            transform: translateX(0);
-            margin: 0 auto;
-            width: 100%;
-            max-width: 100%;
-            z-index: 999;
-        
-    }
-      .menu ul{
-          display: block;
-      }
-      .menu li{
-        padding: 14px 16px;
-      }
 
-    .row {
-        padding-left: 3%;
-    }
-    .col-1 {
-        flex-basis: 65%;
-        max-width: 65%;
-        background: #ffffff40;
-        padding: 14px;
-    }
-    .logo img{
+    .logo img {
         width: 85%;
     }
-    .heading {
-        font-size: 25px;
-    }
-    .hero .heading,.heading{
-        padding-bottom: 20px;
-    }
-    .slides-container {
-        min-height: 500px;
-     
-    }
-    .btn a {
-        padding: 10px 17px;
-        font-size: 12px;
-    }
-    .feature{
-        padding: 50px 0;
-    }
 
-    .grid{
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        gap: 30px;
-       
-    }
-    .benefits{
-        padding:30px 10px 0 ;
-    }
-    footer {
-        padding: 20px 0;
-    }
-    footer .wrapper {
-        max-width: 680px;
-    }
-    footer .grid{
-        
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 40px;
-    }
-    footer p{
-        padding: 50px 0 0 ;
-    }
-} 
-
-@media (min-width:1024px) and (max-width: 1200px){
-    .container{
-        max-width: 1024px;
-        padding: 0 5px;
-    }
-    .logos{
-        display: none;
-    }
-    
-    .logos{
-        display: none;
-    }
-    .navigation{
-        position: relative;
-    }
-    .hamburger{
+    .hamburger {
         display: block;
-        
+
     }
+
     .menu {
-        
+
         position: absolute;
         background-color: #F5F5F5;
         top: 100%;
@@ -491,39 +467,153 @@ footer li a{
         width: 100%;
         max-width: 100%;
         z-index: 999;
-    
-}
-      .menu ul{
-          display: block;
-      }
-      .menu li{
+
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu li {
         padding: 14px 16px;
-      }
+    }
+
+    .row {
+        padding-left: 3%;
+    }
+
+    .col-1 {
+        flex-basis: 65%;
+        max-width: 65%;
+        background: #ffffff40;
+        padding: 14px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .hero .heading,
+    .heading {
+        padding-bottom: 20px;
+    }
+
+    .slides-container {
+        min-height: 500px;
+
+    }
+
+    .btn a {
+        padding: 10px 17px;
+        font-size: 12px;
+    }
+
+    .feature {
+        padding: 50px 0;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 30px;
+
+    }
+
+    .benefits {
+        padding: 30px 10px 0;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    footer .wrapper {
+        max-width: 680px;
+    }
+
+    footer .grid {
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 40px;
+    }
+
+    footer p {
+        padding: 50px 0 0;
+    }
+}
+
+@media (min-width:1024px) and (max-width: 1200px) {
+    .container {
+        max-width: 1024px;
+        padding: 0 5px;
+    }
+
+    .logos {
+        display: none;
+    }
+
+    .navigation {
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+
+    }
+
+    .menu {
+
+        position: absolute;
+        background-color: #F5F5F5;
+        top: 100%;
+        right: 0;
+        transform: translateX(0);
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        z-index: 999;
+
+    }
+
+    .menu ul {
+        display: block;
+    }
+
+    .menu li {
+        padding: 14px 16px;
+    }
 
     .slides-container {
         min-height: 550px;
     }
-    .grid{
+
+    .grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 60px;
-       
+
     }
+
     .heading {
         font-size: 30px;
     }
-    .hero .heading,.heading{
+
+    .hero .heading,
+    .heading {
         padding-bottom: 20px;
     }
+
     .benefits {
         padding: 50px 10px 0;
     }
+
     footer {
         padding: 50px 0;
     }
+
     footer .wrapper {
         max-width: 900px;
     }
-    footer .grid{
+
+    footer .grid {
         gap: 40px;
     }
-}	
+}
